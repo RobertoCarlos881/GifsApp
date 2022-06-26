@@ -3,7 +3,7 @@
     <hr class="text-white">
 
     <div class="list-group list-reset">
-        <a href="#" class="list-group-item list-group-item-action" *ngFor="let valores of historial">
+        <a (click)="buscar(valores)" href="#" class="list-group-item list-group-item-action" *ngFor="let valores of historial">
             {{ valores | titlecase }}
         </a>
     </div>
